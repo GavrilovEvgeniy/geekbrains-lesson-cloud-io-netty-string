@@ -1,0 +1,3 @@
+SERVER put_your_hostname_here your_hostid  27001
+DAEMON mgcld C:\FlexLM\mgcld.exe
+FEATURE mentorall_s mgcld 2020.00 1-jan-2021 999 0 ISSUER=DMT TS_OK

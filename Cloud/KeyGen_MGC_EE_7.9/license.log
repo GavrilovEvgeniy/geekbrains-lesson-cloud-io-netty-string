@@ -1,0 +1,29 @@
+17:28:39 (lmgrd) -----------------------------------------------
+17:28:39 (lmgrd)   Please Note:
+17:28:39 (lmgrd) 
+17:28:39 (lmgrd)   This log is intended for debug purposes only.
+17:28:39 (lmgrd)   In order to capture accurate license
+17:28:39 (lmgrd)   usage data into an organized repository,
+17:28:39 (lmgrd)   please enable report logging. Use Acresso Software Inc.'s
+17:28:39 (lmgrd)   software license administration  solution,
+17:28:39 (lmgrd)   FLEXnet Manager, to  readily gain visibility
+17:28:39 (lmgrd)   into license usage data and to create
+17:28:39 (lmgrd)   insightful reports on critical information like
+17:28:39 (lmgrd)   license availability and usage. FLEXnet Manager
+17:28:39 (lmgrd)   can be fully automated to run these reports on
+17:28:39 (lmgrd)   schedule and can be used to track license
+17:28:39 (lmgrd)   servers and usage across a heterogeneous
+17:28:39 (lmgrd)   network of servers including Windows NT, Linux
+17:28:39 (lmgrd)   and UNIX. Contact Acresso Software Inc. at
+17:28:39 (lmgrd)   www.acresso.com for more details on how to
+17:28:39 (lmgrd)   obtain an evaluation copy of FLEXnet Manager
+17:28:39 (lmgrd)   for your enterprise.
+17:28:39 (lmgrd) 
+17:28:39 (lmgrd) -----------------------------------------------
+17:28:39 (lmgrd) 
+17:28:39 (lmgrd) 
+17:28:39 (lmgrd) pid 1288
+17:28:39 (lmgrd) license manager: can't initialize:No SERVER lines in license file.
+17:28:39 (lmgrd) License Path: "E:\Distr\HL2010\KeyGen_MGC_EE_7.9\license.dat"
+17:28:39 (lmgrd) FLEXnet Licensing error:-13,66
+17:28:39 (lmgrd) For further information, refer to the FLEXnet Licensing documentation,available at "www.acresso.com".

@@ -1,0 +1,42 @@
+Это генератор лицензии для большинства продуктов Mentor Graphics.
+Проверено для PADS 2007.3, HDL Designer 2007.1b и
+Expedition Enterprise 2007.3 - 2007.9 И 2с "лечением" mgls.dll.
+
+               !!!!Внимание!!!!:
+
+1. ВЫ должны заменить MGLS.DLL в папках (много раз - ищется поиском) куда инсталлирован 
+   Mentor экземпляром из папки Crack - это единственный способ заставить работать продукт Mentor'а
+   начиная с версий 2007.3
+
+
+2. Перед генерацией лицензии Отредактируйте нижеследующие файлы *.crc:
+
+mdltech_fl.src - для генерации "floating license", отредактируйте 1-ю строку
+                 "SERVER put_your_hostname_here your_hostid  27001"  заменив 
+                 put_your_hostname_here на Ваш HostName и 
+                 your_hostid   заменив на Ваш  HostID .
+                 Проверьте правильность пути в строке 
+                 DAEMON mgcld C:\FlexLM\mgcld.exe
+                 при необходимости скорректируйте путь к  mgcld.exe.
+		 !!! Теперь  HOSTID=ANY НЕ РАБОТАЕТ !!!.
+
+mdltech_nl.src - для генерации неограниченной "nodelocked license" отредактируйте
+                 строчку HOSTID= заменив ее на 
+                 HOSTID=MAC (MAC - номер Вашей сетевой карты)
+                 или HOSTID=DISK_SERIAL_NUM=Номер Вашего диска.
+
+3. Для получения Вашего HOSTID выполните команду    lmutil.exe hostid -n -ether
+
+4. Генерация файла лицензии выполняется командным файлом:
+
+   make_float.bat 		- для генерации "floating license".
+   make_nodelocked.bat	- для генерации "nodelocked license".
+
+PS: Вы можете добавлять FEATURES в .src файлы, но должны сохранить
+    оригинальный синтаксис. Более того, Вы можете модифицировать поле ISSUER.
+
+                            !!!Примечание, Важно!!!
+
+Библиотека MGLS.DLL в этом "лекарстве" от версии Expedition 7.9!!!
+
+                       G.V.P.

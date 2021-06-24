@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="geekbrains.L2L4.ChatController">
+    <children>
+        <MenuBar opacity="0.5">
+            <Menu text="File">
+                <MenuItem onAction="#exit" text="Item1" />
+                <MenuItem onAction="#mockAction" text="Item2" />
+                <MenuItem onAction="#exit" text="Item3" />
+                <MenuItem onAction="#exit" text="Exit" />
+            </Menu>
+            <Menu text="Edit">
+                <MenuItem onAction="#mockAction" text="Item1" />
+                <MenuItem onAction="#mockAction" text="Item2" />
+                <MenuItem onAction="#mockAction" text="Item3" />
+            </Menu>
+            <Menu text="Some menu">
+                <MenuItem onAction="#mockAction" text="Item1" />
+                <MenuItem onAction="#mockAction" text="Item2" />
+                <MenuItem onAction="#mockAction" text="Item3" />
+            </Menu>
+            <Menu text="Help">
+                <MenuItem onAction="#showHelp" text="Help" />
+                <MenuItem onAction="#mockAction" text="Item2" />
+                <MenuItem onAction="#mockAction" text="Item3" />
+            </Menu>
+         <effect>
+            <Reflection />
+         </effect>
+        </MenuBar>
+        <HBox VBox.vgrow="ALWAYS">
+            <TextArea fx:id="chatArea" editable="false" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS" />
+            <ListView fx:id="onlineUsers" prefWidth="140" />
+            <padding>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </padding>
+        </HBox>
+        <HBox spacing="5">
+            <TextField fx:id="input" blendMode="DARKEN" onAction="#pressEnter" prefHeight="80" HBox.hgrow="ALWAYS">
+            <font>
+               <Font name="System Bold" size="14.0" />
+            </font></TextField>
+            <Button fx:id="btnSendMessage" defaultButton="true" lineSpacing="10" mnemonicParsing="false" onAction="#btnSend" prefHeight="80" prefWidth="140" text="SEND" textFill="#490b72">
+            <font>
+               <Font name="System Bold" size="18.0" />
+            </font></Button>
+            <padding>
+                <Insets bottom="5" left="5" right="5" top="5" />
+            </padding>
+        </HBox>
+      <AnchorPane prefHeight="3.0" prefWidth="628.0" />
+      <AmbientLight color="CHARTREUSE" lightOn="true" />
+    </children>
+</VBox>
